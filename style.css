@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #282c3f;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    padding: 20px 50px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1,
+.footer-logo {
+    color: #fc8019;
+}
+
+nav a {
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #fc8019;
+}
+
+.hero {
+    background-color: #fc8019;
+    color: white;
+    padding: 60px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.hero input {
+    padding: 18px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.hero img {
+    width: 300px;
+    max-width: 100%;
+}
+
+.services {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+}
+
+.food-card,
+.insta-card,
+.dine-card {
+    width: 33.33%;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.food-card {
+    background-color: #fff1e4;
+}
+
+.insta-card {
+    background-color: #eff8e9;
+}
+
+.dine-card {
+    background-color: #f1efff;
+}
+
+.services h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.services h3 {
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.services a {
+    color: #fc8019;
+    font-weight: bold;
+}
+
+.categories {
+    padding: 50px;
+}
+
+.categories h2 {
+    margin-bottom: 30px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.food-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.food-grid h3 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.instamart {
+    background-color: #fffaf5;
+    padding: 50px;
+}
+
+.instamart h2 {
+    margin-bottom: 25px;
+}
+
+.grocery-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.grocery-grid div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.grocery-grid h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.app-banner {
+    margin: 50px;
+    padding: 40px;
+    background-color: #fff0e2;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-banner h2 {
+    font-size: 27px;
+}
+
+.app-banner p {
+    margin-top: 10px;
+}
+
+.app-banner a {
+    background-color: #282c3f;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 8px;
+}
+
+footer {
+    background-color: #f4f4f5;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer a {
+    display: block;
+    color: #686b78;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+footer a:hover {
+    color: #fc8019;
+}
+
+@media (max-width: 900px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero img {
+        width: 220px;
+    }
+
+    .food-grid,
+    .grocery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    nav div {
+        display: none;
+    }
+
+    .hero {
+        display: block;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero img {
+        display: block;
+        width: 180px;
+        margin: 25px auto;
+    }
+
+    .services {
+        display: block;
+        padding: 30px 20px;
+    }
+
+    .food-card,
+    .insta-card,
+    .dine-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .categories,
+    .instamart {
+        padding: 30px 20px;
+    }
+
+    .food-grid,
+    .grocery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .food-grid img {
+        height: 120px;
+    }
+
+    .app-banner {
+        display: block;
+        margin: 25px 20px;
+        padding: 25px;
+    }
+
+    footer {
+        display: block;
+        padding: 30px;
+    }
+
+    footer div {
+        margin-bottom: 25px;
+    }
+}
